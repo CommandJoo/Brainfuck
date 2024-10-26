@@ -16,3 +16,10 @@ class TestBrainfuck {
     }   
 }
 ```
+or using the Command Line Interface
+```bash
+java -jar Brainfuck-Version-all.jar --file brainfuckcode.bf
+```
+
+### Libraries used
+[JoptSimple](https://github.com/jopt-simple/jopt-simple) for the Command Line Interface
