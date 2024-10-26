@@ -11,6 +11,13 @@ public class FileUtil {
         StringBuilder str = new StringBuilder();
         String line = "";
         while((line = reader.readLine()) != null) {
+            line = line.replaceAll("#.*#", "");
+            for(int i = 0; i < line.length(); i++) {
+                if(line.charAt(i)=='#') {
+                    line=line.substring(0, i);
+                    break;
+                }
+            }
             str.append(line);
         }
         reader.close();
